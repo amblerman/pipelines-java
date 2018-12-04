@@ -36,7 +36,8 @@ steps:
     artifactName: 'war'
     pathToPublish: '$(build.artifactStagingDirectory)'
 
-- script: pwd
-    displayName: Get working directory
-- script: echo $JAVA_HOME
-    displayName: echo javahome
+- script: 'pwd'
+  displayName: 'print working directory'
+- script: 'echo $JAVA_HOME'
+  displayName: 'print out javahome'
+
